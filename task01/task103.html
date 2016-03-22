@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>三栏式布局</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: "微软雅黑";
+    }
+    
+    .container {
+        margin: 20px auto;
+        width: 95%;
+        height: auto;
+        background-color: #eee;
+        padding: 20px;
+    }
+    
+    .team {
+        float: left;
+        background-color: white;
+        padding: 20px;
+        width: 200px;
+        border: 1px solid #999;
+    }
+    
+    
+    .person {
+        float: right;
+        width: 120px;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #999;
+    }
+    
+    .person-logo {
+        margin: 20px 0 ;
+    }
+    
+    .content {
+        background-color: white;
+        height: auto;
+        margin: auto 180px auto 260px;
+        padding: 20px;
+        border: 1px solid #999;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    .text{
+    	text-indent: 2em;
+    	line-height: 200%;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="team">
+            <p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E5%9B%BE%E6%A0%87.jpg" width="80px" height="80px" alt="团队logo" align="top" style="margin:0px 20px " /> Try
+            </p>
+        </div>
+        <div class="person">
+            <p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E6%9C%AA%E6%98%8E.jpg" width="80px" height="80px" alt="个人logo" class="person-logo"  align="middle" /> 王清
+            </p>
+            <p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E6%9B%B9%E8%90%BC%E5%8D%8E.jpg" width="80px" height="80px" alt="个人logo" class="person-logo"  align="middle" />
+            王艺</p>
+            <p><img src="http://7xqijt.com1.z0.glb.clouddn.com/IFE%E5%82%85%E5%89%91%E5%AF%92.jpg" width="80px" height="80px" alt="个人logo" class="person-logo" align="middle" />赵晗
+            </p>
+        </div>
+        <div class="content">
+       	<p class="text">首先非常荣幸能参加这次活动。感谢百度前端技术学院，这几天的学习感觉弥补了以前很多遗漏的知识。</p>
+       	<p class="text">下面来介绍下队友们。图片来自早年我很喜欢的游戏武林群戏传的新作——《侠客风云传》。<strong>王艺</strong>的头像原型是曹萼华，华山掌门曹岱的掌上明珠，自幼便是华山之宝，人人对其呵护倍至，过度保护造成其不知江湖的险恶。大家闺秀，容貌美丽，个性软弱。<strong>赵晗</strong>头像原型为傅剑寒，无师自通的剑术奇才，无意中得到一本兵书从其中兵法创出一套剑法，名为霸王剑法，其剑招看似平常，却皆能在关键之时克敌制胜。为人豪迈，讲义气，爱好喝酒。哈，最重要的是他一直蛮低调的，到最后其实他才是游戏中最大的bug。<strong>王清</strong>头像原型为东方未明，从无名山村慕名小虾米想到洛阳闯荡一番，后阴差阳错拜入逍遥谷成为无瑕子关门弟子，自此展开了一长篇江湖故事。当然也是为了勉励自己，本是一名煤矿工人，考上了软工研究生，自此展开了码农之路。</p>
+       	<p class="text">The road ahead will be long and our climb will be steep！</p>
+       	<p class="text">嗯，先写这点吧，如果有空回头来填坑，没空的话就这样吧。</p>
+       	<p align="right">2016.03.22</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</body>
+
+</html>
