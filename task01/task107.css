@@ -1,0 +1,746 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "microsoft YaHei", sans-serif;
+}
+
+
+/*Header*/
+
+.header {
+    min-width: 1280px;
+    height: 56px;
+}
+
+.header-logo {
+    top: 13px;
+    left: 59px;
+    text-decoration: none;
+    color: #000;
+    line-height: 56px;
+    margin-left: 59px;
+}
+
+.logo-img {
+    width: 31px;
+    height: 31px;
+    background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_03.png");
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 56px;
+}
+
+.logo-txt {
+    font-size: 21px;
+    font-family: "黑体";
+}
+
+.header-nav {
+    float: right;
+    margin-right: 67px;
+    color: #787b83;
+}
+
+.header-nav li {
+    display: inline-block;
+    line-height: 56px;
+    font-size: 14px;
+    margin-left: 46px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    color: #787b83;
+}
+
+.header-nav a:hover {
+    font-weight: bold;
+    color: #e74f4d;
+}
+
+.header-nav a:hover::before,
+.header-nav a:hover::after {
+    position: absolute;
+}
+
+.header-nav a:hover::before {
+    content: "\5B";
+    left: -10px;
+}
+
+.header-nav a:hover::after {
+    content: "\5D";
+    right: -10px;
+}
+
+.header-login-img {
+    height: 17px;
+    width: 14px;
+    margin-right: 5px;
+    display: inline-block;
+    color: #e74f4d;
+    background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_06.png")
+}
+
+.header-login {
+    color: #e74f4d;
+}
+
+.header-login:hover {
+    /*for IE*/
+    filter: alpha(opacity=70);
+    /*CSS3 standard*/
+    opacity: 0.7;
+}
+
+
+/*Wrapper*/
+
+.wrapper {
+    margin: 0 auto;
+    min-width: 1280px;
+    min-height: 500px;
+    background-color: #aaa;
+}
+
+
+/*Banner*/
+
+.banner {
+    position: relative;
+    min-width: 1280px;
+    height: 689px;
+    background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_10.png");
+    background-position: center;
+    background-size: 100%
+}
+
+.banner h1 {
+    position: absolute;
+    top: 230px;
+    left: 116px;
+    font-size: 60px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.banner p {
+    position: absolute;
+    top: 310px;
+    left: 124px;
+    font-size: 21px;
+    color: #fff;
+    line-height: 31px;
+}
+
+.banner a {
+    position: absolute;
+    top: 429px;
+    left: 126px;
+    height: 65px;
+    width: 331px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    background-color: #e74f4d;
+}
+
+
+/*Point*/
+
+.point {
+    min-width: 1280px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.point-info {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.point-info img {
+    margin-top: 45px;
+}
+
+.point-info p {
+    margin-top: 46px;
+    font-size: 14px;
+    font-family: "黑体";
+    border-right: 2px solid #787b83;
+}
+
+.introduce {
+    min-width: 1280px;
+    height: 361px;
+    background-color: #edecec;
+    text-align: center;
+}
+
+.introduce img {
+    margin-top: 89px;
+}
+
+.introduce p {
+    font-size: 54px;
+    color: #a1a1a1;
+    margin-top: 48px;
+}
+
+
+/*Seach*/
+
+.seach {
+    min-width: 1280px;
+    height: 341px;
+    background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_29.png");
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+}
+
+.seach h3 {
+    font-size: 21px;
+    color: #fff;
+    margin-top: 52px;
+    display: inline-block;
+    font-weight: normal;
+}
+
+.seach-between {
+    width: 31px;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.seach p {
+    font-size: 12px;
+    color: #fff;
+    margin-top: 19px;
+}
+
+.form {
+    display: inline-block;
+}
+
+.seach-list-country,
+.seach-list-province,
+.seach-list-city {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 52px;
+    margin-right: 28px;
+}
+
+.seach-list-init {
+    position: relative;
+    width: 236px;
+    height: 36px;
+    background-color: #fff;
+}
+
+.seach-list-init span {
+    font-size: 12px;
+    position: absolute;
+    left: 13px;
+    color: #a8aaaa;
+    line-height: 36px;
+}
+
+.seach-list-init img {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
+
+.seach-list-country ul,
+.seach-list-province ul,
+.seach-list-city ul {
+    list-style: none;
+    background-color: #e3e3e4;
+    max-height: 170px;
+    width: 236px;
+}
+
+.seach-list-country li,
+.seach-list-province li,
+.seach-list-city li {
+    text-align: left;
+    text-indent: 2em;
+    line-height: 27px;
+    font-size: 12px;
+    color: #323333;
+}
+
+.seach ul li:hover {
+    background-color: #be4e48;
+    background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_35.png");
+    background-repeat: no-repeat;
+    background-position: 9px 9px;
+    cursor: pointer;
+}
+
+.seach-button {
+    display: inline-block;
+    width: 236px;
+    height: 36px;
+    background-color: #bf4f49;
+    border: 0px;
+    vertical-align: top;
+    margin-top: 52px;
+}
+
+.seach-button:hover {
+    cursor: pointer;
+}
+
+
+/*Activity*/
+
+.activity {
+    min-width: 1280px;
+    height: 600px;
+    background-color: #f8f7f7;
+    text-align: center;
+}
+
+.activity-show {
+    display: inline-block;
+    margin-top: 101px;
+    width: 218px;
+    height: 389px;
+    margin-right: 36px;
+}
+
+.activity-show img {
+    padding: 9px;
+    border: 1px solid #d9d5d4;
+}
+
+.activity-show h3 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+}
+
+.activity-show p {
+    color: #787b83;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+/*New-world*/
+
+.new-world {
+    min-width: 1280px;
+    height: 1087px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.new-world-info1 {
+    float: left;
+    width: 66.66%;
+    height: 566px;
+    background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_45.png");
+    background-size: 100%;
+}
+
+.new-world-info1 h2 {
+    margin-top: 135px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: normal;
+}
+
+.new-world-info1 h1 {
+    font-size: 158px;
+    color: #fff;
+    font-weight: normal;
+    line-height: 120px;
+}
+
+.new-world-info1 p {
+    margin-top: 39px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 43px;
+}
+
+.new-world-info2 {
+    float: left;
+    width: 33.33%;
+    height: 566px;
+    background-color: #fff;
+}
+
+.new-world-info2 h3 {
+    margin-top: 165px;
+    font-size: 20px;
+    font-family: "宋体";
+}
+
+.new-world-info2 p {
+    margin-top: 31px;
+    padding: 0 70px;
+    font-size: 12px;
+    line-height: 30px;
+    font-family: "宋体";
+    color: #aaa;
+}
+
+.new-world-info2 input {
+    margin-top: 41px;
+    width: 107px;
+    height: 35px;
+    border: 1px solid #e74f4d;
+    background-color: #fff;
+    color: #e74f4d;
+}
+
+.disc {
+    display: inline-block;
+    margin-top: 24px;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: #929293;
+}
+
+.donut {
+    display: inline-block;
+    margin-top: 24px;
+    margin-left: 14px;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    border: 1px solid #929293;
+}
+
+.new-world-info3,
+.new-world-info4,
+.new-world-info5 {
+    float: left;
+    width: 33.33%;
+    height: 521px;
+    color: #fff;
+    background-color: #e74f4d;
+    text-align: center;
+}
+
+.new-world-info3 p,
+.new-world-info4 p {
+    margin-top: 173px;
+    font-size: 21px;
+    font-family: "黑体";
+    line-height: 30px;
+}
+
+.new-world-info3-between,
+.new-world-info4-between {
+    margin: 24px auto;
+    width: 31px;
+    height: 3px;
+    background-color: #fff;
+}
+
+.new-world-info3 input,
+.new-world-info4 input {
+    width: 170px;
+    height: 44px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #e74f4d;
+    font-size: 21px;
+    font-family: "黑体";
+    line-height: 24px;
+}
+
+.new-world-info4 {
+    background-color: #fff;
+}
+
+.new-world-info4 p {
+    color: #323333;
+}
+
+.new-world-info4-between {
+    background-color: #aaaaaa;
+}
+
+.new-world-info4 input {
+    border: 1px solid #e74f4d;
+    background-color: #fff;
+    color: #e74f4d;
+}
+
+.new-world-info5 {
+    background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_48.png");
+    background-size: 100%;
+}
+
+
+/*Join-in*/
+
+.join-in {
+    min-width: 1280px;
+    height: 750px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.join-in h3 {
+    margin-top: 118px;
+    font-size: 21px;
+    line-height: 30px;
+    color: #323333;
+    font-weight: normal;
+    font-family: "黑体";
+}
+
+.join-in-between {
+    margin: 12px auto;
+    width: 31px;
+    height: 3px;
+    background-color: #e74f4d;
+}
+.join-in p{
+	font-size: 12px;
+	line-height: 18px;
+	color: #aaaaaa;
+}
+.form-wrapper{
+
+	
+	background-color: #eee;
+}
+.protocol{
+	width: 25%;
+	height: 285px;
+	float: left;
+	text-align: left;
+	padding-left: 138px;
+}
+.protocol dt{
+	margin-top: 111px;
+	font-size: 14px;
+	color: #231815;
+}
+.protocol dd{
+	margin-top: 27px;
+	font-size: 12px;
+	line-height: 21px;
+	font-family: "宋体";
+	color: #231815;
+}
+.protocol span{
+	display: inherit;
+	text-align: right;
+	font-size: 12px;
+	line-height: 19px;
+	color: #231815;
+}
+form{
+	float: left;
+	margin-top: 107px;
+	margin-left: 77px;
+	width: 50%;
+	/*height: 285px;*/
+	overflow: hidden;
+}
+.username{
+	float: left;
+	width: 49%;
+	height: 41px;
+	text-align: left;
+	line-height: 41px;
+	background-color: #edecee;
+}
+.userage{
+	float: left;
+	width: 49%;
+	height: 41px;
+	margin-left: 2%;
+	text-align: left;
+	line-height: 41px;
+	background-color: #edecee;
+}
+.usernum{
+	float: left;
+	width: 49%;
+	height: 41px;
+	text-align: left;
+	margin-top: 13px;
+	line-height: 41px;
+	background-color: #edecee;	
+}
+.useraddress{
+	float: left;
+	width: 49%;
+	height: 41px;
+	margin-left: 2%;
+	text-align: left;
+	margin-top: 13px;
+	line-height: 41px;
+	background-color: #edecee;
+}
+.userlife{
+	float: left;
+	width: 100%;
+	text-align: left;
+	margin-top: 13px;
+	background-color: #edecee;
+}
+textarea{
+	width: 98%;
+	height: 121px;
+	background-color: #edecee;
+	margin-left: 10px;
+	outline:none;
+	border: none;
+	resize: none;
+}
+label{
+	width: 18%;
+	margin-left: 15px;
+	font-size: 12px;
+	font-family: "宋体";
+	color: #767777;
+
+}
+form div input{
+	width: 77%;
+	border:none;
+	height: 41px;
+	background-color: #edecee;
+	outline: none;
+}
+form>input{
+	margin-top: 13px;
+	width: 100%;
+	height: 41px;
+	background-color: #edecee;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	font-size: 14px;
+	font-family: "黑体";
+}
+/*Contact-us*/
+.contact-us{
+	min-width: 1280px;
+	height: 361px;
+	background-color: #32353e;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+.contact-us h3{
+	margin-top: 92px;
+	font-size: 21px;
+	font-family: "黑体";
+	line-height: 48px;
+	color: #fff;
+	font-weight: normal;
+}
+.contact-us p{
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "宋体";
+	color: #fff;
+}
+.contact-us-email{
+	margin-top: 31px;
+	display: inline-block;
+	width: 512px;
+	height: 41px;
+}
+.contact-us-email input{
+	height: 41px;
+	width: 431px;
+	font-size: 14px;
+	line-height: 27px;
+	text-indent: 2em;
+	border:none;
+	vertical-align: top;
+}
+.contact-us-email a{
+	display: inline-block;
+	width: 75px;
+	height: 41px;
+	margin-left: -10px;
+	background-color: #6f7278;
+	vertical-align: top;
+	font-size: 15px;
+	line-height: 41px;
+	color: #fff;
+	text-decoration: none;
+}
+.icon{
+	margin: 37px auto;
+	width: 200px;
+	height: 30px; 
+}
+.icon-1{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 28px;
+	background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_51.png");
+}
+.icon-2{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 28px;
+	background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_53.png");
+}
+.icon-3{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	margin-right: 28px;
+	background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_55.png");
+}
+.icon-4{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url("http://7xqijt.com1.z0.glb.clouddn.com/IFE%2Ftask107_57.png");
+}
+/*Footer*/
+.footer {
+	position: relative;
+	min-width: 1280px;
+	height: 58px;
+	background-color: #2f2f38;
+}
+.footer span{
+	position: absolute;
+	font-size: 12px;
+	font-family: "宋体";
+	left: 100px;
+	top:30px;
+	color: #fff;
+}
+.footer p{
+	position: absolute;
+	color: #fff;
+	font-size: 12px;
+	font-family: "宋体";
+	right: 41px;
+	top: 32px;
+}
