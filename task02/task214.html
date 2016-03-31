@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>零基础JavaScript编码（二）</title>
+</head>
+
+<body>
+    <h3>污染城市列表</h3>
+    <ul id="aqi-list">
+        <!--   
+    <li>第一名：福州（样例），10</li>
+  	<li>第二名：福州（样例），10</li> -->
+    </ul>
+    <script type="text/javascript">
+    var aqiData = [
+        ["北京", 90],
+        ["上海", 50],
+        ["福州", 10],
+        ["广州", 50],
+        ["成都", 80],
+        ["西安", 100],
+        ["深圳", 90],
+        ["天津", 120]
+    ];
+
+    function aqiFliter() {
+
+        /*
+        在注释下方编写代码
+        遍历读取aqiData中各个城市的数据
+        将空气质量指数大于60的城市显示到aqi-list的列表中
+        */
+
+        var adress, aqiNum;
+        var aqiList = document.getElementById("aqi-list");
+        var count = 1;
+
+        // 整理数据，筛选出空气质量大于60的城市
+        var tidyData = aqiData.filter(function(item, index) {
+            return (item[1] > 60);
+        });
+
+        // 对筛选出来的城市以空气质量升序排序
+        var sortData = tidyData.sort(function(x, y) {
+            return y[1] - x[1];
+        })
+        var innerHTMLs = '';
+
+        for (var i = 0; i < sortData.length; i++) {
+            adress = sortData[i][0];
+            aqiNum = sortData[i][1];
+            innerHTMLs += "<li>第" + (i + 1) + "名：" + adress + ", " + aqiNum + "</li>";
+        }
+        aqiList.innerHTML = innerHTMLs;
+    };
+
+    aqiFliter();
+    </script>
+</body>
+
+</html>
